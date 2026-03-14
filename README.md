@@ -13,6 +13,7 @@ This project builds a environment-sensor with a DHT11 sensor, 4 digits 7 segment
 - DHT11 3-legs temperature and humidity sensors
 - 4 Digits 7 Segments display
 - IC 74HC595N
+- 8 220 ohms resistors
 
 ## Complete Circuit setp pciture
 Below is the set-up:
