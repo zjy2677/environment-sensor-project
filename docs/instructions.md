@@ -190,7 +190,7 @@ Most DHT11 modules already contain a pull-up resistor.
 If using a **bare DHT11 sensor**, add a **10kΩ resistor between DATA and VCC**.
 
 ## Reference DHT11
-<img src="docs/photos/dht11_reference.png" width="80%">
+<img src="photos/dht11_reference.png" width="80%">
 ---
 
 # 11. Breadboard Wiring Procedure
