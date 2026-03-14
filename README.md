@@ -21,5 +21,5 @@ This project builds a environment-sensor with a DHT11 sensor, 4 digits 7 segment
 ## Demo Video
 - Demo video stored in the docs/videos is only available by downloading 
 - An alternative is to click the link to watch the 
-[demo video](https://github.com/zjy2677/environment-sensor-project/blob/main/docs/videos/demo_video.mp4) 
+[demo video]([https://github.com/zjy2677/environment-sensor-project/blob/main/docs/videos/demo_video.mp4](https://youtu.be/mEsEXNluwGs?si=_lqfac_bEHgE9btN)) 
 via Youtube
