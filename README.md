@@ -16,8 +16,7 @@ This project builds a environment-sensor with a DHT11 sensor, 4 digits 7 segment
 - 8 220 ohms resistors
 
 ## Complete Circuit setup picture
-Below is the set-up:
-![Complete Circuit Setup](docs/photos/setup_pic.jpg)
+<img src="docs/photos/setup_pic.jpg" width="60%">
   
 ## Demo Video
 - Below is a demo video for real-world testing
