@@ -305,15 +305,18 @@ Then the sequence repeats.
 
 ### Test the sensor
 
-Upload a simple sketch and confirm that **temperature and humidity appear in the Serial Monitor**.
+Use the file at src/test_dht11.ino to test the sensor
+Expected output will be normal display of temperature and humidity readings at serial monitor
 
 ### Test the display
 
-Run a simple program to turn on all segments of a single digit.
+Use the file at src/test_display.ino to test the display
+Expected behaviour will be 1 digit light up showing 8
 
 ### Test segment mapping
 
-Turn on **one segment at a time** to verify wiring.
+Use the file at test_segment_mapping.ino to test the mapping between shift register and display
+Watch the display and record to see if mappings are correct
 
 ### Combine the systems
 
