@@ -267,3 +267,76 @@ Temperature is stored with **one decimal place**.
 
 complete code at folder main/docs/main.ino
 
+---
+
+## 3. Send segment data to the shift register
+
+The Arduino sends **8 bits** to the 74HC595:
+
+These bits determine which segments turn on.
+
+---
+
+## 4. Multiplex the digits
+
+The Arduino quickly cycles through:
+
+Each digit is activated for a few milliseconds.
+
+Because this happens very fast, the display appears stable.
+
+---
+
+# 13. Display Sequence
+
+Because 7-segment displays cannot clearly show many letters, simplified labels are used.
+
+The display cycle is:
+-tE
+-temperature displayed
+-HU
+-humidity displayed
+
+Then the sequence repeats.
+
+---
+
+# 14. Testing Procedure
+
+### Test the sensor
+
+Upload a simple sketch and confirm that **temperature and humidity appear in the Serial Monitor**.
+
+### Test the display
+
+Run a simple program to turn on all segments of a single digit.
+
+### Test segment mapping
+
+Turn on **one segment at a time** to verify wiring.
+
+### Combine the systems
+
+After both the sensor and display work separately, run the final program.
+
+---
+
+# 15 Final Result 
+
+# 16. Final Result
+
+After completing the wiring and uploading the program, the system will:
+
+- read temperature and humidity from the DHT11
+- control the display using the 74HC595 shift register
+- multiplex the 4-digit display
+- alternate between temperature and humidity readings
+
+This project demonstrates:
+
+- sensor interfacing
+- shift register control
+- multiplexed LED display driving
+- embedded systems programming with Arduino
+
+
