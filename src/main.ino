@@ -1,5 +1,39 @@
-#include "display.h"
-#include "sensor.h"
+#include <DHT.h>
+
+#define DHTPIN 7
+#define DHTTYPE DHT11
+
+#define DATA 8
+#define CLOCK 9
+#define LATCH 10
+
+#define D1 2
+#define D2 3
+#define D3 4
+#define D4 5
+
+DHT dht_sensor(DHTPIN, DHTTYPE);
+
+// Q0->A, Q1->B, Q2->C, Q3->D, Q4->E, Q5->F, Q6->G, Q7->DP
+byte digitCode[10] = {
+  0b00111111, // 0
+  0b00000110, // 1
+  0b01011011, // 2
+  0b01001111, // 3
+  0b01100110, // 4
+  0b01101101, // 5
+  0b01111101, // 6
+  0b00000111, // 7
+  0b01111111, // 8
+  0b01101111  // 9
+};
+
+byte letters[4] = {
+   0b01111000, //t
+   0b01111001,//E
+   0b01110110, //H
+   0b00111110, //U
+};
 
 void setup() {
   pinMode(DATA, OUTPUT);
@@ -19,6 +53,27 @@ void setup() {
   digitalWrite(D2, HIGH);
   digitalWrite(D3, HIGH);
   digitalWrite(D4, HIGH);
+}
+
+void sendToShiftRegister(byte value) {
+  digitalWrite(LATCH, LOW);
+  shiftOut(DATA, CLOCK, MSBFIRST, value);
+  digitalWrite(LATCH, HIGH);
+}
+
+void allDigitsOff() {
+  digitalWrite(D1, HIGH);
+  digitalWrite(D2, HIGH);
+  digitalWrite(D3, HIGH);
+  digitalWrite(D4, HIGH);
+}
+
+void showDigit(int digitPin, byte pattern, int delayMs = 3) {
+  allDigitsOff();
+  sendToShiftRegister(pattern);
+  digitalWrite(digitPin, LOW);   // active LOW
+  delay(delayMs);
+  digitalWrite(digitPin, HIGH);  // turn it back off
 }
 
 void loop() {
