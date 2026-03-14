@@ -5,7 +5,7 @@
 
 This project uses:
 
-- **Arduino Uno**
+- **Arduino Board**
 - **DHT11 temperature and humidity sensor**
 - **74HC595N shift register**
 - **4-digit 7-segment LED display**
@@ -120,13 +120,7 @@ The 74HC595N has **16 pins**.
 | 10 | SRCLR / MR | 5V |
 | 13 | OE | GND |
 
-Explanation:
-
-- **SER** receives serial data from Arduino.
-- **SH_CP** shifts data into the register.
-- **ST_CP** updates the outputs.
-- **SRCLR** keeps the register from resetting.
-- **OE** enables the outputs.
+Reference Picture
 
 ---
 
@@ -194,6 +188,8 @@ These pins control which digit is active during multiplexing.
 Most DHT11 modules already contain a pull-up resistor.
 
 If using a **bare DHT11 sensor**, add a **10kΩ resistor between DATA and VCC**.
+
+Reference DHT11
 
 ---
 
@@ -266,5 +262,5 @@ from the DHT11 sensor.
 
 Temperature is stored with **one decimal place**.
 
-Example:
+complete code at folder main/docs/main.ino
 
