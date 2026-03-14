@@ -2,12 +2,21 @@
 #include "sensor.h"
 
 void setup() {
-  initDisplay();
-  initSensor();
-}
+  pinMode(DATA, OUTPUT);
+  pinMode(CLOCK, OUTPUT);
+  pinMode(LATCH, OUTPUT);
 
-void loop() {
-  const float reading = readSensorValue();
-  showReading(reading);
-  delay(1000);
+  pinMode(D1, OUTPUT);
+  pinMode(D2, OUTPUT);
+  pinMode(D3, OUTPUT);
+  pinMode(D4, OUTPUT);
+
+  Serial.begin(9600);
+  dht_sensor.begin();
+
+  // for active-LOW digit control: HIGH = off
+  digitalWrite(D1, HIGH);
+  digitalWrite(D2, HIGH);
+  digitalWrite(D3, HIGH);
+  digitalWrite(D4, HIGH);
 }
