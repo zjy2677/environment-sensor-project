@@ -4,7 +4,7 @@ This project builds a environment-sensor with a DHT11 sensor, 4 digits 7 segment
 
 ## Project structure
 
-- `docs/` includes instructions 
+- `docs/` includes instructions.md
 - `docs/photos/` for hardware, setup photo, and components' connection reference
 - `docs/video/` includes a demo video
 - `src/` includes all the codes for arduino
