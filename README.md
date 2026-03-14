@@ -16,7 +16,7 @@ This project builds a environment-sensor with a DHT11 sensor, 4 digits 7 segment
 
 ## Complete Circuit setp pciture
 Below is the set-up:
-https://github.com/zjy2677/environment-sensor-project/docs/photos/setup_pic.jpg
+https://github.com/zjy2677/environment-sensor-project/blob/docs/photos/setup_pic.jpg
   
 ## Demo Video
 - Below is a demo video for real-world testing
