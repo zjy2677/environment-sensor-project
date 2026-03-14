@@ -323,8 +323,6 @@ After both the sensor and display work separately, run the final program.
 
 # 15 Final Result 
 
-# 16. Final Result
-
 After completing the wiring and uploading the program, the system will:
 
 - read temperature and humidity from the DHT11
