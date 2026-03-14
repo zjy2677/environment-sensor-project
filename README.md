@@ -15,7 +15,8 @@ This project builds a environment-sensor with a DHT11 sensor, 4 digits 7 segment
 - IC 74HC595N
 
 ## Complete Circuit setp pciture
-- Below is the set-up
+Below is the set-up:
+https://github.com/zjy2677/environment-sensor-project/docs/photos/setup_pic.jpg
   
 ## Demo Video
 - Below is a demo video for real-world testing
