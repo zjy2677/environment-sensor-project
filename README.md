@@ -6,7 +6,16 @@ This project builds a environment-sensor with a DHT11 sensor, 4 digits 7 segment
 
 - `docs/` includes wiring diagrams and instructions 
 - `docs/photos/` for hardware and setup photos.
+- `docs/video/` includes a demo video that will be directly displayed below
 - `src/` includes all the codes for arduino
 
-## Demo video 
+## Hardware setup
+- DHT11 3-legs temperature and humidity sensors
+- 4 Digits 7 Segments display
+- IC 74HC595N
+
+## Complete Circuit setp pciture
+- Below is the set-up
+  
+## Demo Video
 - Below is a demo video for real-world testing
