@@ -1,0 +1,14 @@
+# Build artifacts
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+
+# Arduino IDE
+*.ino.cpp
+*.ino.cpp.d
+
+# OS-generated files
+.DS_Store
+Thumbs.db
