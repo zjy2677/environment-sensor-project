@@ -120,7 +120,8 @@ The 74HC595N has **16 pins**.
 | 10 | SRCLR / MR | 5V |
 | 13 | OE | GND |
 
-Reference Picture
+## Reference 74HC595N Shift Register
+<img src="photos/sr_reference.png" width="60%">
 
 ---
 
@@ -175,6 +176,8 @@ Connect digits directly to the Arduino:
 
 These pins control which digit is active during multiplexing.
 
+## Reference Display
+<img src="photos/display_reference.png" width="60%">
 ---
 
 # 10. Wiring the DHT11 Sensor
@@ -190,7 +193,7 @@ Most DHT11 modules already contain a pull-up resistor.
 If using a **bare DHT11 sensor**, add a **10kΩ resistor between DATA and VCC**.
 
 ## Reference DHT11
-<img src="photos/dht11_reference.png" width="80%">
+<img src="photos/dht11_reference.png" width="60%">
 ---
 
 # 11. Breadboard Wiring Procedure
